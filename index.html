@@ -3,20 +3,35 @@
 <style>
 html {
   font-family: sans-serif;
+  image-rendering: crisp-edges;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/5x5_1.png")
+}
+
+body {
+  margin: 0px;
+  padding: 80px 0px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .jacaranda {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 702px;
 }
 
 .title {
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid 1px black;
+  /* border-radius: 20px 20px 0px 0px; */
+  margin-bottom: 15px;
+  background: white;
 }
 
 .title > p {
@@ -28,15 +43,25 @@ html {
   display: flex;
   width: 700px;
   background: white;
+  border: solid 1px black;
+  background: white;
 }
 
 .side-panel {
   flex: 2;
+  background-image: url('/assets/2x2_1.png');
+  padding-top: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
 }
 
 .side-panel-header {
   font-weight: bold;
-  margin-bottom: 5px;
+  padding: 1px 5px 2px;
+  margin: 4px 5px 0px;
+  background: black;
+  color: white;
+  box-shadow: 0px 0px 0px 1px white;
 }
 
 .side-panel-button {
@@ -45,82 +70,78 @@ html {
   border: solid 1px black;
   border-top: none;
   padding: 1px 5px;
+  /*
   background: linear-gradient(180deg,rgba(245, 245, 245, 1) 0%, rgba(199, 199, 199, 1) 100%);
+  */
   text-decoration: none;
   color: black;
 }
 
 .side-panel-button:hover {
+  /*
   background: linear-gradient(0deg,rgba(245, 245, 245, 1) 0%, rgba(199, 199, 199, 1) 100%);
+  */
+  background-image: url("/assets/5x5_1.png");
+}
+
+.side-panel-category {
+  position: relative;
+  top: -1px;
+  z-index: 0;
+  background: white;
+  margin: 0px 5px 10px;
+  padding: 5px;
+  border: solid 1px black;
+  box-shadow: 1px 1px 0px 0px white, -1px 1px 0px 0px white;
 }
 
 .main {
   flex: 5;
-  height: 500px;
+  min-height: 500px;
+  /*
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-}
-
-.red {
-  grid-area: 1 / 1 / 2 / 3;
-  margin: 5px;
-  border-top: solid 40px #E1E374;
-  background: linear-gradient(180deg,rgba(245, 247, 129, 1) 0%, rgba(225, 227, 116, 1) 100%);
-  box-shadow: 2px 2px 5px black;
-  z-index: 5;
-  font-family: Comic Neue;
-  padding: 5px 10px;
-}
-
-.blue {
-  grid-area: 1 / 3 / 2 / 4;
-  /* background-color: blue; */
-}
-
-.yellow {
-  grid-area: 2 / 1 / 3 / 2;
-  background-color: yellow;
-}
-
-.magenta {
-  grid-area: 2 / 2 / 3 / 4;
-  background: magenta;
+  grid-template-rows: 12fr 1fr;
+  */
 }
 </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <p>Hi</p>
-    <p><a href="/garden/">Would you like to smell the flowers?</a></p>
     <div class="jacaranda">
       <div class="title">
-	<h1>I'm, sigh, a vim user...</h1>
+	<div>
+	  <h1 style="margin: 0px; text-align: center;">amaryllis.dev</h1>
+	  <p style="margin: 0px; text-align: center;">for marigold.any was too expensive</p>
+	</div>
       </div>
       <div class="carambola">
 	<div class="side-panel">
 	  <p class="side-panel-header">Directory</p>
-	  <a class="side-panel-button" href="/" style="border-top: solid 1px black;">Home</a>
-	  <a class="side-panel-button" href="articles/">Articles</a>
-	  <a class="side-panel-button" href="projects/">Projects</a>
-	  <a class="side-panel-button" href="about">About</a>
-	  <a class="side-panel-button">.</a>
-	  <a class="side-panel-button">.</a>
-	  <a class="side-panel-button">.</a>
-	  <a class="side-panel-button">.</a>
-	  <a class="side-panel-button">.</a>
-	  <a class="side-panel-button">.</a>
+	  <div class="directory side-panel-category" style="padding: 0px; border: none;">
+	    <a class="side-panel-button" href="/" style="border-top: solid 1px black;"><span style="background: white;">Home</span></a>
+	    <a class="side-panel-button" href="articles/"><span style="background: white;">Articles</a>
+	    <a class="side-panel-button" href="projects/"><span style="background: white;">Projects</a>
+	    <a class="side-panel-button" href="about">About</a>
+	  </div>
+	  <p class="side-panel-header">mini log</p>
+	  <div class="mini-log side-panel-category">
+	    <p>2025-09-22 - <span>website update</span></p>
+	  </div>
+	  <p class="side-panel-header">Status</p>
+	  <div class="status side-panel-category">
+	    <p>Feeling... content</p>
+	  </div>
 	</div>
 	<div class="main">
-	  <div class="red">
-	    <p>hi everybody! this is a sticky note! i made it with css, i hope that you are proud ><</p>
-	    <p>we are not near agi. yes, llms have gotten very much better recently. impressively so. but i do not believe that llm technologies today will shape the agi tech of tomorrow. we have been climbing a mountain (i unwilling so) and it appears that you can see the peak. once up there though, you will see a much grander mountain, its peak barely perceptible.</p>
+	  <div style="margin: 5px 15px;">
+	    <h2>welcome!</h2>
+	    <img src="/assets/flower.png" style="float: right; width: 32px; margin: 5px 40px 5px 20px; padding: 5px;">
+	    <p>welcome to amaryllis.dev, website of marigold (any domains with marigold were already taken or too expensive). if i am going to be hoenst, i have no real clue what i will use this website for but i did want to reclaim my place on the internet and break free from it all so i have made this.</p>
+	    <p>the wild west that is the internet. it is a shame that it was tamed by corporations and made to extract every last piece of value.</p>
 	  </div>
-	  <div class="blue"></div>
-	  <div class="yellow"></div>
-	  <div class="magenta"></div>
 	</div>
       </div>
     </div>
