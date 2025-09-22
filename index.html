@@ -1,7 +1,128 @@
 <html>
-	<head>
-	</head>
-	<body>
-		<p>Hi</p>
-	</body>
+  <head>
+<style>
+html {
+  font-family: sans-serif;
+}
+
+.jacaranda {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.title {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
+
+.title > p {
+  width: fit-content;
+  height: fit-content;
+}
+
+.carambola {
+  display: flex;
+  width: 700px;
+  background: white;
+}
+
+.side-panel {
+  flex: 2;
+}
+
+.side-panel-header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.side-panel-button {
+  display: block;
+  /* width: 100%; */
+  border: solid 1px black;
+  border-top: none;
+  padding: 1px 5px;
+  background: linear-gradient(180deg,rgba(245, 245, 245, 1) 0%, rgba(199, 199, 199, 1) 100%);
+  text-decoration: none;
+  color: black;
+}
+
+.side-panel-button:hover {
+  background: linear-gradient(0deg,rgba(245, 245, 245, 1) 0%, rgba(199, 199, 199, 1) 100%);
+}
+
+.main {
+  flex: 5;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.red {
+  grid-area: 1 / 1 / 2 / 3;
+  margin: 5px;
+  border-top: solid 40px #E1E374;
+  background: linear-gradient(180deg,rgba(245, 247, 129, 1) 0%, rgba(225, 227, 116, 1) 100%);
+  box-shadow: 2px 2px 5px black;
+  z-index: 5;
+  font-family: Comic Neue;
+  padding: 5px 10px;
+}
+
+.blue {
+  grid-area: 1 / 3 / 2 / 4;
+  /* background-color: blue; */
+}
+
+.yellow {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: yellow;
+}
+
+.magenta {
+  grid-area: 2 / 2 / 3 / 4;
+  background: magenta;
+}
+</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <p>Hi</p>
+    <p><a href="/garden/">Would you like to smell the flowers?</a></p>
+    <div class="jacaranda">
+      <div class="title">
+	<h1>I'm, sigh, a vim user...</h1>
+      </div>
+      <div class="carambola">
+	<div class="side-panel">
+	  <p class="side-panel-header">Directory</p>
+	  <a class="side-panel-button" href="/" style="border-top: solid 1px black;">Home</a>
+	  <a class="side-panel-button" href="articles/">Articles</a>
+	  <a class="side-panel-button" href="projects/">Projects</a>
+	  <a class="side-panel-button" href="about">About</a>
+	  <a class="side-panel-button">.</a>
+	  <a class="side-panel-button">.</a>
+	  <a class="side-panel-button">.</a>
+	  <a class="side-panel-button">.</a>
+	  <a class="side-panel-button">.</a>
+	  <a class="side-panel-button">.</a>
+	</div>
+	<div class="main">
+	  <div class="red">
+	    <p>hi everybody! this is a sticky note! i made it with css, i hope that you are proud ><</p>
+	    <p>we are not near agi. yes, llms have gotten very much better recently. impressively so. but i do not believe that llm technologies today will shape the agi tech of tomorrow. we have been climbing a mountain (i unwilling so) and it appears that you can see the peak. once up there though, you will see a much grander mountain, its peak barely perceptible.</p>
+	  </div>
+	  <div class="blue"></div>
+	  <div class="yellow"></div>
+	  <div class="magenta"></div>
+	</div>
+      </div>
+    </div>
+  </body>
 </html>
