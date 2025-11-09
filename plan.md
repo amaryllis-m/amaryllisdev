@@ -49,3 +49,10 @@ otherwise on their website
 - welcome page
 - website name
 
+- misattributed hatred: "the world will pay for sins that aren't it's own"
+- : "melting and cannot stop"
+- tired decay: "unachieved goals. to live is to fail but i cannot live with that"
+- : "for what if everybody leave me behind and never misses me"
+- ignorant inaction: "unable to stop yourself from stopping"
+- haunted: "how could i leave it all behind"
+
