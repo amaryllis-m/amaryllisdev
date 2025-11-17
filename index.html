@@ -1,148 +1,41 @@
 <html>
   <head>
-<style>
-html {
-  font-family: sans-serif;
-  image-rendering: crisp-edges;
-  width: 100%;
-  height: 100%;
-  background-image: url("/assets/5x5_1.png")
-}
-
-body {
-  margin: 0px;
-  padding: 80px 0px 0px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.jacaranda {
-  display: flex;
-  flex-direction: column;
-  width: 702px;
-  margin-bottom: 40px;
-}
-
-.title {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px black;
-  /* border-radius: 20px 20px 0px 0px; */
-  margin-bottom: 15px;
-  background: white;
-}
-
-.title > p {
-  width: fit-content;
-  height: fit-content;
-}
-
-.carambola {
-  display: flex;
-  width: 700px;
-  background: white;
-  border: solid 1px black;
-  background: white;
-}
-
-.side-panel {
-  flex: 2;
-  background-image: url('/assets/2x2_1.png');
-  padding-top: 10px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-}
-
-.side-panel-header {
-  font-weight: bold;
-  padding: 1px 5px 2px;
-  margin: 4px 5px 0px;
-  background: black;
-  color: white;
-  box-shadow: 0px 0px 0px 1px white;
-}
-
-.side-panel-button {
-  display: block;
-  /* width: 100%; */
-  border: solid 1px black;
-  border-top: none;
-  padding: 1px 5px;
-  /*
-  background: linear-gradient(180deg,rgba(245, 245, 245, 1) 0%, rgba(199, 199, 199, 1) 100%);
-  */
-  text-decoration: none;
-  color: black;
-}
-
-.side-panel-button:hover {
-  /*
-  background: linear-gradient(0deg,rgba(245, 245, 245, 1) 0%, rgba(199, 199, 199, 1) 100%);
-  */
-  background-image: url("/assets/5x5_1.png");
-}
-
-.side-panel-category {
-  position: relative;
-  top: -1px;
-  z-index: 0;
-  background: white;
-  margin: 0px 5px 10px;
-  padding: 5px;
-  border: solid 1px black;
-  box-shadow: 1px 1px 0px 0px white, -1px 1px 0px 0px white;
-}
-
-.main {
-  flex: 5;
-  min-height: 500px;
-  /*
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 12fr 1fr;
-  */
-}
-</style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="jacaranda">
-      <div class="title">
-	<div>
-	  <h1 style="margin: 0px; text-align: center;">amaryllis.dev</h1>
-	  <p style="margin: 0px; text-align: center;">for marigold.any was too expensive</p>
-	</div>
-      </div>
-      <div class="carambola">
-	<div class="side-panel">
-	  <p class="side-panel-header">Directory</p>
-	  <div class="directory side-panel-category" style="padding: 0px; border: none;">
-	    <a class="side-panel-button" href="/" style="border-top: solid 1px black;"><span style="background: white;">Home</span></a>
-	    <a class="side-panel-button" href="articles/"><span style="background: white;">Articles</a>
-	    <a class="side-panel-button" href="projects/"><span style="background: white;">Projects</a>
-	    <a class="side-panel-button" href="about"><span style="background: white;">About</a>
-	  </div>
-	  <p class="side-panel-header">mini log</p>
-	  <div class="mini-log side-panel-category">
-	    <p>2025-09-22 - <span>website update</span></p>
-	  </div>
-	  <p class="side-panel-header">Status</p>
-	  <div class="status side-panel-category">
-	    <p>Feeling... content</p>
-	  </div>
-	</div>
+    <div class="windows">
+      <div class="main-window-area">
 	<div class="main">
-	  <div style="margin: 5px 15px;">
-	    <h2>welcome!</h2>
-	    <img src="/assets/flower.png" style="float: right; width: 32px; margin: 5px 40px 5px 20px; padding: 5px 5px 0px; border-bottom: solid 1px black;">
+	  <div class="text-bounds">
+	    <h1>welcome!</h1>
 	    <p>welcome to amaryllis.dev, website of marigold (any domains with marigold were already taken or too expensive). if i am going to be hoenst, i have no real clue what i will use this website for but i did want to reclaim my place on the internet and break free from it all so i have made this.</p>
 	    <p>the wild west that is the internet. it is a shame that it was tamed by corporations and made to extract every last piece of value.</p>
 	    <p>it seems to me that everybody is running forward, or worrying that they are not. what lies in the horizon that you so desperatly wish to find? is it that my myopic eyes fail me?</p>
+	    <h2 id="about">about me.</h2>
+	    <p class="subtitle">ya who is this bozo</p>
+	    <p>hi im marigold.</p>
+	    <ul>
+	      <li>music: (sickened yellow) FEMTANYL, STOMACH BOOK</li>
+	    </ul>
+	  </div>
+	</div>
+      </div>
+      <div class="nav-window-area">
+	<div class="nav-window">
+	  <p class="nav-window-header">Navigation</p>
+	  <div class="nav-button-container">
+	    <a class="nav-button" href="/">Home</a>
+	    <a class="nav-button" href="/#about">About</a>
+	    <a class="nav-button">Articles</a>
+	  </div>
+	</div>
+	<div class="feels-window">
+	  <p class="feels-window-header">Feels</p>
+	  <div class="feels-button-container">
+	    <p class="feels">yellow</p>
 	  </div>
 	</div>
       </div>
