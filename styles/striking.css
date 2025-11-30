@@ -1,0 +1,191 @@
+html {
+	font-family: "Libre Baskerville", Times, serif;
+  font-size: 16px;
+  image-rendering: crisp-edges;
+  width: 100%;
+  height: 100%;
+  background: #111;
+	color: #ddd;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* =================================================================== */
+/* Selection CSS */
+*::selection, *::-moz-selection {
+  color: #111;
+	background-color: #f59f0f;
+}
+
+/* =================================================================== */
+.windows {
+  display: flex;
+  flex-direction: row;
+}
+
+/* =================================================================== */
+/* Navigation Area */
+.nav-window-area {
+  font-size: 12px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+	visibility: hidden;
+}
+
+.nav-window,
+.feels-window {
+  margin-left: 10px;
+  width: 150px;
+  height: fit-content;
+
+  background: white;
+}
+
+.nav-window-header,
+.feels-window-header {
+  padding: 2px 4px;
+  margin: 0px;
+
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-button-container,
+.feels-button-container {
+  border: solid 1px black;
+}
+
+.nav-button {
+  padding: 1px 3px;
+  display: block;
+  
+  border-top: solid 1px black;
+
+  color: black;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background: #ccc;
+}
+
+/* =================================================================== */
+/* Feels Area */
+.feels-window {
+  margin-top: 20px;
+}
+
+.feels {
+  padding: 0px 5px;
+}
+
+/* =================================================================== */
+
+.main {
+  min-height: 500px;
+  width: 550px;
+
+  padding-bottom: 75px;
+
+	margin: 100px 0px 0px 80px;
+}
+
+.text-bounds {
+  margin: 5px 15px;
+}
+
+/* =================================================================== */
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1 {
+  font-size: 42px;
+	letter-spacing: 2px;
+	font-weight: normal;
+	color: #f59f0f;
+	margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+	margin-top: 1.5lh;
+}
+
+h3 {
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.subtitle:before {
+  content: "sub:";
+  margin-right: 10px;
+}
+
+ul {
+	margin: 10px 0px;
+	padding-left: 20px;
+}
+
+/* =================================================================== */
+/* Backwards */
+.backwards {
+	margin-top: 10px;
+	margin-right: 20px;
+	width: fit-content;
+	float: right;
+}
+
+.backwards > a {
+	color: black;
+}
+
+p {
+	margin: 1lh 0px;
+}
+
+:target {
+	background: black;
+	color: white;
+}
+
+em {
+	color: #f59f0f;
+	font-style: italic;
+}
+
+a {
+	color: #f59f0f;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: #fff;
+}
+
+b {
+	color: #fff;
+}
+
+small {
+	color: #999;
+}
+
+li {
+	margin: 0.5lh 0px;
+}
