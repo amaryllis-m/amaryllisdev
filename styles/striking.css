@@ -198,3 +198,7 @@ li {
 .no-oblique:hover {
 	font-style: normal;
 }
+
+h1 > a:hover {
+	font-style: normal;
+}
