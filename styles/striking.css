@@ -171,11 +171,15 @@ em {
 
 a {
 	color: #f59f0f;
-	transition: color 0.2s;
+	transition: 0.2s;
+	text-decoration-style: dashed;
+	text-decoration-color: rgba(245, 159, 15, 0.75);
 }
 
 a:hover {
 	color: #fff;
+	font-style: oblique;
+	text-decoration-color: rgba(255, 255, 255, 0.75);
 }
 
 b {
@@ -188,4 +192,8 @@ small {
 
 li {
 	margin: 0.5lh 0px;
+}
+
+.no-oblique:hover {
+	font-style: normal;
 }
