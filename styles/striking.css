@@ -165,8 +165,9 @@ p {
 }
 
 em {
-	color: #f59f0f;
+	color: #fff;
 	font-style: italic;
+	font-weight: bold;
 }
 
 a {
